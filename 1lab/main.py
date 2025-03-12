@@ -1,11 +1,10 @@
 
 def main():
-    branch2()
+    # Ваш код здесь
+    branch3()
     pass
-
-def branch2():
-    print('branch2222222')
-
+def branch3():
+    print('branch3')
 if __name__ == "__main__":
     main()
 
