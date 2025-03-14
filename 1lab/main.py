@@ -1,16 +1,18 @@
+from threading import Thread
+
+from server import start
+
+import client
+
 
 def main():
-    # Ваш код здесь
-    branch3()
-    branch2()
-    pass
+    client.main()
 
-def branch3():
-    print('branch3')
 
-def branch2():
-    print('branch2222222')
+def server():
+    start()
 
-if __name__ == "__main__":
-    main()
 
+if __name__ == '__main__':
+    Thread(target=start).start()
+    Thread(target=main).start()
